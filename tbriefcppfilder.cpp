@@ -9,14 +9,14 @@
 TBriefCppFilder::TBriefCppFilder(const std::wstring inPathToFile)
 {
     path_ = inPathToFile;
-    data_ = std::make_shared<CppData>();
+    data_ = std::make_shared<Data>();
 }
 
 /*!
  * \brief TBriefCppFilder::calculate возвращает структуру классов с функциями и их комментариями
  * \return структура классов с функциями и их комментариями
  */
-std::shared_ptr<CppData> TBriefCppFilder::calculate()
+std::shared_ptr<Data> TBriefCppFilder::calculate()
 {
     readFile();
     return data_;

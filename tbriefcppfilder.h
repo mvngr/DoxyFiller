@@ -10,17 +10,17 @@
 
 #include "FileStructure/tclassinfo.h"
 
-typedef std::map<std::wstring, TClassInfo> CppData;
+typedef std::map<std::wstring, TClassInfo> Data;
 
 class TBriefCppFilder
 {
 public:
     TBriefCppFilder(const std::wstring inPathToFile);
 
-    std::shared_ptr<CppData> calculate();
+    std::shared_ptr<Data> calculate();
 
 private:
-    std::shared_ptr<CppData> data_;
+    std::shared_ptr<Data> data_;
     std::wstring path_;
 
     void readFile();
