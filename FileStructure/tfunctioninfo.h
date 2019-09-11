@@ -13,6 +13,8 @@ public:
 
     std::wstring name() const;
 
+    bool isValid() const;
+
     bool operator < (const TFunctionInfo &other) const;
     bool operator > (const TFunctionInfo &other) const;
     bool operator == (const TFunctionInfo &other) const;
